@@ -1,6 +1,6 @@
 # Website template for hackathon, nothing else
 ## Before cloning
-remember to create virtual environment
+remember to create virtual environment \n
 example: python -m venv .venv
 *ignore the venv file in the repo
 ## Before running the server
