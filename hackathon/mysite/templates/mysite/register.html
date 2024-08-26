@@ -1,0 +1,17 @@
+{% extends 'mysite/base.html' %}
+
+{% block title %}Register{% endblock %}
+
+{% block content %}
+<header>
+    <h1 class="custom-heading">Register</h1>
+</header>
+<main>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Register</button>
+    </form>
+</main>
+{% endblock %}
+

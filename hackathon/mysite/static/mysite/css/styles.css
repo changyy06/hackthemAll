@@ -1,0 +1,155 @@
+/* Reset some default browser styles */
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* General body styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 0.1;
+    margin: 0;
+    padding: 0;
+}
+
+.icon {
+    border-radius: 50%
+}
+
+/* Logo styling */
+.logo {
+    display: block;               
+    margin: 0 auto;              
+    max-width: 50px;           
+    height: auto;                 
+    border-radius: 50%;        
+    object-fit: cover;           
+    float: left;                
+    margin-right: 20px;           
+    margin-left: 30px;
+    margin-top: -10px;
+
+}
+
+.custom-heading {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.login-header {
+    text-align: center;
+}
+
+/* Header styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+/* Navigation styling */
+nav {
+    background-color: #444;
+    padding: 10px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+.nav-right {
+    margin-left: auto;
+    display: flex;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #ddd;
+}
+
+/* Main content area styling */
+main {
+    padding: 20px;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Heading styling */
+h1, h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Paragraph styling */
+p {
+    margin-bottom: 20px;
+}
+
+/* Link styling */
+a {
+    color: #0066cc;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.login-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.login-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.login-container form button {
+    margin-top: 10px;
+}
+
+.registration-link {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.registration-link p {
+    margin: 0;
+}
+

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="icon" href="{% static 'mysite/images/favicon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'mysite/css/styles.css' %}">
+</head>
+<body>
+    <header>
+        <a href="{% url 'home' %}">
+        <img src="{% static 'mysite/images/teamx.png' %}" alt="TeamX Logo", class="logo">
+        </a>
+        <h1 class="custom-heading">Welcome to My Hackathon Template</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation links go here -->
+        <ul>
+            <li><a href="{% url 'home' %}">Home</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <div class="nav-right">
+                <li><a href="{% url 'register' %}">Register</a></li>
+                <li><a href="{% url 'login' %}">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+
+    <main>
+        {% block content %}
+        <!-- Page-specific content will go here -->
+        {% endblock %}
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Team X</p>
+    </footer>
+</body>
+</html>
